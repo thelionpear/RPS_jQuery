@@ -1,0 +1,45 @@
+header {
+    background-color: gray; 
+    text-align: center 
+    
+}
+
+#jigsaw {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px; 
+}
+
+.rps_image {
+    display: inline-block; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 33%; 
+    height: 300px;  
+}
+
+h2,
+h3 {
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 45%;
+    height: 250px; 
+}
+
+.hidden {
+    display: none; 
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    width:40em;
+    height:20em;
+    margin-top: -10em;
+    margin-left: -20em;
+    border: 1px solid black; 
+}
+

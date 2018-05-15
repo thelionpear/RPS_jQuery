@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>RPS</title>
+        <link rel= "stylesheet" href="./css/style.css"/>
+    </head>
+
+    <header>
+        <h1>I Want to Play a Game</h1>
+        <img id="jigsaw" src="http://horrorgeeklife.com/wp-content/uploads/2018/01/Jigsaw-Saw-Dead-by-Daylight.jpg">
+    </header>
+
+    <body>
+        <div class="row">
+            <div class="column">
+                <h2>How to Play Rock, Paper, Scissors:</h2>
+                <h3>Select one of the images below. The computer will make their choice.</h3>
+                <h3>Keep in mind: Rock beat scissors, scissors beats paper, and paper beats rock.</h3>
+                <h3>That's all you need to know. Good luck!</h3>
+            </div>
+
+            <div class="column">
+                <h2 id="wins">Wins:</h2>
+                <h2 id="losses">Losses:</h2>
+                <h2 id="ties">Ties:</h2>
+            </div>
+        </div>
+
+        <img onclick = "user_selection('rock')" class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-027-512.png">
+        <img onclick = "user_selection('paper')" class = "rps_image" src = "https://cdn0.iconfinder.com/data/icons/rock-paper-scissors-emoji/792/rock-paper-scissors-emoji-cartoon-019-512.png">
+        <img onclick = "user_selection('scissors')" class = "rps_image" src = "https://png.pngtree.com/element_pic/17/02/09/08ad61b612011dad5c3e220d1663cc28.jpg">
+
+
+<!-- I am creating a div here that has the default of hidden. I'm going to make it float in the middle of the screen
+and triggered when the player clicks on their choice. It'll display their choice and the computer  -->
+
+        <div class="hidden" id="results_box">
+            <div class="row">
+                <div class="column">
+                    <h2 id="winner_image"> Winner Choice:</h2>
+                </div>
+
+                <div class="column">
+                    <h2 id="computer_image">Computer Choice:</h2>
+                </div>
+                <h2 id="win_or_lose"></h2>
+                <button id="continue_playing">Continue Playing</button>
+                <button id="new_game">New Game (Reset Tally)</button>
+            </div>
+        </div>
+
+    </body>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</html>
+
+
