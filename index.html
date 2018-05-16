@@ -35,16 +35,17 @@ and triggered when the player clicks on their choice. It'll display their choice
 
         <div class="hidden" id="results_box">
             <div class="row">
-                <div class="column">
+                <h2 id="win_or_lose"></h2>
+                <div class="column" id="player_column">
                     <h2 id="player_image"> Player Choice:</h2>
+                    <button id="continue_playing">Continue Playing</button>
                 </div>
 
-                <div class="column">
+                <div class="column" id="computer_column">
                     <h2 id="computer_image">Computer Choice:</h2>
+                    <button id="new_game">New Game (Reset Tally)</button>
                 </div>
-                <h2 id="win_or_lose"></h2>
-                <button id="continue_playing">Continue Playing</button>
-                <button id="new_game">New Game (Reset Tally)</button>
+                
             </div>
         </div>
 
