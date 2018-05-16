@@ -9,6 +9,9 @@
 
 
     function user_selection(user_input) {
+        if ($("#results_box").is(":visible")) {
+            return 
+        }
         var computer_array = ["rock", "paper", "scissors"];
         var computer_choice = computer_array[Math.floor(Math.random() * computer_array.length)];
         // switch statement
@@ -111,7 +114,7 @@
         $("#losses").text("Losses:" + " " + losses_tally)
         tie_tally = 0
         $("#ties").text("Ties:" + " " + tie_tally)
-        
+        $(".result_box_img").remove()
     });
 
 
