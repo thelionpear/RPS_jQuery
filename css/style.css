@@ -43,3 +43,7 @@ h3 {
     border: 1px solid black; 
 }
 
+.result_box_img {
+    width: 80%;
+    margin-top: 10px; 
+}
